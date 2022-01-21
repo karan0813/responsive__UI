@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Serchitem = ({ mrpprice, pricewithoutdiscount, productimage, metatitle }) => {
 
@@ -8,12 +8,13 @@ const Serchitem = ({ mrpprice, pricewithoutdiscount, productimage, metatitle }) 
 
         <div className="flex  flex-col">
             <div>
-                <img className="object-contain " src={productimage} alt='' />
+                <img className="object-contain  " src={productimage} alt='' />
             </div>
             <h3 className="m-3 font-bold">{metatitle?.length > 22 ? metatitle.substr(0, 35) + "..." : metatitle(metatitle, 20)}</h3>
             <div className="flex items-center justify-items-start m-3">
-                <p className="px-5 line-through"><span className="font-bold">Rs:</span>{mrpprice}</p> <p><span className="font-bold">Rs:</span>{pricewithoutdiscount}</p>
+                <p className="pr-5 line-through"><span className="font-bold">Rs:</span>{mrpprice}</p> <p><span className="font-bold">Rs:</span>{pricewithoutdiscount}</p>
             </div>
+            <hr className=" bg-zinc-900 w-full h-0.5 " />
             <div className="flex items-center justify-between">
                 <button className="bg-gray-500 px-5 py-2 rounded-sm m-3">Order Now</button>
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 m-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
