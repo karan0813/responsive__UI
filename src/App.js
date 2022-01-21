@@ -1,7 +1,7 @@
 import './App.css';
 import Grid from './comp/Grid';
 import Navbar from './comp/Navbar';
-import Slider from './Slider';
+import Slider from './comp/Slider';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,9 +20,11 @@ function App() {
         <Switch>
         <Route path="/home" exact>
              <Navbar />
-             <Slider/>
-            <Grid/>
-          </Route>
+            <Slider />
+            
+            <Grid />
+            
+            </Route>
           <Route path="/login" exact>
             <Login/>
           </Route>
