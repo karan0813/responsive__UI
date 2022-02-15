@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Serchitem = ({ mrpprice, pricewithoutdiscount, productimage, metatitle }) => {
+const Serchitem = ({ mrpprice, pricewithoutdiscount, productimage, metatitle, off }) => {
 
 
 
@@ -13,6 +13,7 @@ const Serchitem = ({ mrpprice, pricewithoutdiscount, productimage, metatitle }) 
             <h3 className="m-3 font-bold">{metatitle?.length > 22 ? metatitle.substr(0, 35) + "..." : metatitle(metatitle, 20)}</h3>
             <div className="flex items-center justify-items-start m-3">
                 <p className="pr-5 line-through"><span className="font-bold">Rs:</span>{mrpprice}</p> <p><span className="font-bold">Rs:</span>{pricewithoutdiscount}</p>
+                <span className=" lg:ml-3 px-3 py-2 bg-red-600 text-sm rounded-xl">{off}%OFF</span>
             </div>
             <hr className=" bg-zinc-900 w-full h-0.5 " />
             <div className="flex items-center justify-between">

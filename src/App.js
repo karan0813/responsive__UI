@@ -11,8 +11,6 @@ import {
 import Login from './comp/Login';
 
 
-
-
 function App() {
   return (
     <>
@@ -25,7 +23,7 @@ function App() {
             <Grid />
             
             </Route>
-          <Route path="/login" exact>
+          <Route path="" exact>
             <Login/>
           </Route>
         </Switch>
